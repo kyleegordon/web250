@@ -12,6 +12,11 @@ header
     size: 3em;
 }
 
+#toc_list
+{
+  list-style-type: none;
+}
+
 .nav-link
 {
   
