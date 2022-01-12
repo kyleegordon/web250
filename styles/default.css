@@ -25,6 +25,7 @@ footer
 .row 
 {
     border: 3px solid blue;
+    opacity: 0%;
 }
 
 
