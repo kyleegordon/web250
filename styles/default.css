@@ -15,6 +15,7 @@ header
 #toc_list
 {
   list-style-type: none;
+  border: 3px solid white;
 }
 
 .nav-link
