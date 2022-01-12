@@ -12,6 +12,7 @@ body
 header
 {
     font-variant: small-caps;
+
     height: 10vh;
     font-size: 2em;
 }
@@ -42,21 +43,23 @@ footer
     margin: 2% 1%;
 }
 
-
 /* unvisited link */
-a:link {
+a:link 
+{
     color: red;
     text-decoration: none;
-  }
+}
   
   /* visited link */
-  a:visited {
+  a:visited 
+  {
     color: red;
     text-decoration: none;
   }
   
   /* mouse over link */
-  a:hover {
+  a:hover 
+  {
     color: hotpink;
     text-decoration: none;
   }
