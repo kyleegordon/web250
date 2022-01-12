@@ -25,9 +25,9 @@ header
   border: 3px solid white;
 }
 
-.nav-link
+.nav-link + .nav-link
 {
-  
+  margin-right: 1%;
 }
 
 footer
