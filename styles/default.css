@@ -1,8 +1,35 @@
-header{
+header
+{
+    font-variant: small-caps;
     background-color: aquamarine;
 }
 
-.row {
+footer
+{
+    font-variant: small-caps;
+}
+
+.row 
+{
     border: 3px solid blue;
 }
 
+
+/* unvisited link */
+a:link {
+    color: red;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: red;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+    text-decoration: none;
+  }
+  
