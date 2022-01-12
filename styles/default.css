@@ -12,7 +12,7 @@ body
 header
 {
     font-variant: small-caps;
-
+  background-color: black;
     height: 10vh;
     font-size: 2em;
 }
