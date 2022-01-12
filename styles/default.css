@@ -15,6 +15,7 @@ header
 #toc_list
 {
   list-style-type: none;
+  width: 50%;
   border: 3px solid white;
 }
 
@@ -32,6 +33,7 @@ footer
 {
     border: 3px solid blue;
     background-color: transparent;
+    margin: 1%;
 }
 
 
