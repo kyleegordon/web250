@@ -1,7 +1,6 @@
 html
 {
   overflow: hidden;
-  font-size: 1.5em;
 }
 body
 {
@@ -14,11 +13,12 @@ header
     font-variant: small-caps;
     background-color: aquamarine;
     height: 10vh;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #toc_list
 {
+  font-size: 1.5em;
   list-style-type: none;
   width: 33%;
   border: 3px solid white;
