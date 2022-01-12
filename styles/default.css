@@ -1,3 +1,7 @@
+html
+{
+  font-size: 2em;
+}
 body
 {
   /* image credit: Peter Gargiulo, unsplash.com */
@@ -9,13 +13,13 @@ header
     font-variant: small-caps;
     background-color: aquamarine;
     height: 10vh;
-    size: 3em;
+    size: 4em;
 }
 
 #toc_list
 {
   list-style-type: none;
-  width: 50%;
+  width: 33%;
   border: 3px solid white;
 }
 
