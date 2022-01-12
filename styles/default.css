@@ -13,7 +13,7 @@ header
     font-variant: small-caps;
     background-color: aquamarine;
     height: 10vh;
-    size: 4em;
+    size: 3.5em;
 }
 
 #toc_list
@@ -31,6 +31,7 @@ header
 footer
 {
     font-variant: small-caps;
+    font-size: 1em;
 }
 
 .row 
