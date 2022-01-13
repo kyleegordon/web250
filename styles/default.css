@@ -8,6 +8,7 @@ body
   /* image credit: Peter Gargiulo, unsplash.com */
   background-image: url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
   padding-bottom: 2%;
+  color: rgba(194, 240, 242, 0.9);
 }
 header
 {
