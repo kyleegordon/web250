@@ -78,7 +78,7 @@ a:link
 
   #mountain_img
   {
-    width: 25vw;
-    height: auto;
+    max-height: 25vw;
+    width: auto;
   }
   
