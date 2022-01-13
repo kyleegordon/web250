@@ -18,11 +18,13 @@ header
   height: 7vh;
 }
 
-main{
+main
+{
   margin-top: 8vh;
 }
 
-h2{
+h2
+{
   color: #45A29E;
 }
 
@@ -48,7 +50,8 @@ footer
     margin: 2% 1%;
 }
 
-.text-responsive {
+.text-responsive 
+{
   font-size: calc(100% + 1vw + 1vh);
 }
 
@@ -71,5 +74,10 @@ a:link
   {
     color: #66FCF1;
     text-decoration: none;
+  }
+
+  #mountain_img
+  {
+    width:fit-content;
   }
   
