@@ -12,6 +12,7 @@ body
 header
 {
   font-variant: small-caps;
+  color: #950740;
   background-color: black;
   height: 7vh;
 }
@@ -20,11 +21,14 @@ main{
   margin-top: 8vh;
 }
 
+h2{
+  color: #45A29E;
+}
+
 #toc_list
 {
   list-style-type: none;
   margin: auto;
-  border: 3px solid white;
 }
 
 .nav-link
@@ -39,7 +43,6 @@ footer
 
 .row 
 {
-    border: 3px solid blue;
     background-color: transparent;
     margin: 2% 1%;
 }
@@ -51,21 +54,21 @@ footer
 /* unvisited link */
 a:link 
 {
-    color: red;
+    color: #950740;
     text-decoration: none;
 }
   
   /* visited link */
   a:visited 
   {
-    color: red;
+    color: #950740;
     text-decoration: none;
   }
   
   /* mouse over link */
   a:hover 
   {
-    color: hotpink;
+    color: #66FCF1;
     text-decoration: none;
   }
   
