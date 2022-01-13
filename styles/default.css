@@ -14,12 +14,12 @@ header
     font-variant: small-caps;
   background-color: black;
     height: 8vh;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 #toc_list
 {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   list-style-type: none;
   width: 30%;
   margin: auto;
@@ -34,7 +34,7 @@ header
 footer
 {
     font-variant: small-caps;
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 .row 
