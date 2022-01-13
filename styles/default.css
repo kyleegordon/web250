@@ -11,9 +11,10 @@ body
 }
 header
 {
-    font-variant: small-caps;
+  top: 0%;
+  font-variant: small-caps;
   background-color: black;
-    height: 6vh;
+  height: 6vh;
     /* font-size: 2rem; */
 }
 
