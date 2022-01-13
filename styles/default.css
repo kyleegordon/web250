@@ -14,8 +14,11 @@ header
   font-variant: small-caps;
   background-color: black;
   height: 6vh;
-  padding-bottom: 8vh;
     /* font-size: 2rem; */
+}
+
+main{
+  margin-top: 8vh;
 }
 
 #toc_list
