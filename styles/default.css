@@ -13,7 +13,7 @@ header
 {
   font-variant: small-caps;
   color: #950740;
-  background-color: #1F2833;
+  background-color: rgba(6, 6, 8, 0.5);
   height: 7vh;
 }
 
