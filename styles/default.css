@@ -13,7 +13,6 @@ body
 header
 {
   font-variant: small-caps;
-  color: #950740;
   background-color: rgba(6, 6, 8, 0.7);
   height: 7vh;
 }
@@ -25,7 +24,7 @@ main
 
 h2
 {
-  color: #45A29E;
+  color: rgb(112, 23, 230);
 }
 
 #toc_list
@@ -58,21 +57,21 @@ footer
 /* unvisited link */
 a:link 
 {
-    color: #950740;
+    color: rgb(218, 241, 245);
     text-decoration: none;
 }
   
   /* visited link */
   a:visited 
   {
-    color: #950740;
+    color: rgb(218, 241, 245);
     text-decoration: none;
   }
   
   /* mouse over link */
   a:hover 
   {
-    color: #66FCF1;
+    color: rgb(75, 153, 144);
     text-decoration: none;
   }
 
