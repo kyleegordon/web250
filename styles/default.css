@@ -24,7 +24,7 @@ main
 
 h2
 {
-  color: rgb(112, 23, 230);
+  color: rgb(69, 7, 168);
 }
 
 #toc_list
@@ -57,21 +57,21 @@ footer
 /* unvisited link */
 a:link 
 {
-    color: rgb(218, 241, 245);
+    color: rgb(6, 191, 191);
     text-decoration: none;
 }
   
   /* visited link */
   a:visited 
   {
-    color: rgb(218, 241, 245);
+    color: rgb(6, 191, 191);
     text-decoration: none;
   }
   
   /* mouse over link */
   a:hover 
   {
-    color: rgb(75, 153, 144);
+    color: rgb(237, 245, 244);
     text-decoration: none;
   }
 
