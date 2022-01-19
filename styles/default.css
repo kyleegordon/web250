@@ -20,6 +20,8 @@ header
 main
 {
   margin-top: 8vh;
+  padding: 1vh;
+  margin-bottom: 8vh;
 }
 
 h2
