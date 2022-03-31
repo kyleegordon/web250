@@ -24,29 +24,35 @@
     <header class="fixed-top">
         <div class="row dflex navbar py-0 h2" id="header_nav">
             <div class="col-10" id="logo">
-                <a href="index.php"> <i class="fas fa-paw"></i>Pawsitively Posh </a>
+                <a href="?p=toc.php"> <i class="fas fa-paw"></i>Pawsitively Posh </a>
                 <p id="tagline" style="color: rgba(194, 240, 242, 0.9); font-size: 0.85rem">
                     <i>Functional fashion for the modern dog</i>
                 </p>
             </div>
             <div class="col-1 nav-link ms-auto h1">
-                <a href="index.php"><i class="fas fa-home"></i></a>
+                <a href="?p=toc.php"><i class="fas fa-home"></i></a>
             </div>
         </div>
     </header>
+    <div class="container-fluid text-responsive">
+        <div id="bg">
+            <!-- image credit: Peter Gargiulo, unsplash.com  -->
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                alt="" />
+        </div>
 
-    <!-- dynamic content goes here -->
+        <!-- dynamic content goes here -->
 
-    <?php
-    $sPage = $_GET["p"];
-    //echo ("You picked the page: " . $sPage); 
+        <?php
+        $sPage = $_GET["p"];
+        //echo ("You picked the page: " . $sPage); 
 
-    if ($sPage == "") {
-        $sPage = "toc.php";
-    }
-    include("contents/" . $sPage);
-    ?>
-
+        if ($sPage == "") {
+            $sPage = "toc.php";
+        }
+        include("contents/" . $sPage);
+        ?>
+    </div>
     <!-- Optional JavaScript for Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
