@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet" />
     <!-- custom stylesheet -->
-    <link href="/styles/default.css" rel="stylesheet" />
+    <link href="../styles/default.css" rel="stylesheet" />
     <!-- icons from Font Awesome -->
     <script src="https://kit.fontawesome.com/91d2a50ff4.js" crossorigin="anonymous"></script>
 </head>
