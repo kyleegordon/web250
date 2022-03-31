@@ -67,7 +67,7 @@
                     </div>
                     <div class="col-4 my-auto">
                         <figure>
-                            <img src="/images/mountainphoto.jpg" id="mountain_img" />
+                            <img src="../images/mountainphoto.jpg" id="mountain_img" />
                             <figcaption>Hiking with my dog</figcaption>
                         </figure>
                     </div>
