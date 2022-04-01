@@ -13,6 +13,7 @@
                         <li><a href="?p=introduction.php">Introduction</a></li>
                         <li><a href="?p=brand.php">Brand</a></li>
                         <li><a href="?p=joy_of_php/sams_used_cars.php">Car Guide</a></li>
+                        <li><a href="?p=m6forms.php">One Form, Two Forms...</a></li>
                     </ul>
                 </div>
             </div>
