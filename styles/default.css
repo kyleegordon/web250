@@ -192,4 +192,8 @@ i {
 #intro-table td {
   padding: 1% 0 2% 0;
 }
+
+.form_table td {
+  padding: 2%;
+}
   
