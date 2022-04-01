@@ -9,7 +9,7 @@
             <div class="row dflex justify-content-center">
                 <div class="col-auto h4">
 
-                    <h4 style="text-align: center;">First POST Form </h4>
+                    <h4 style="text-align: center;">First Form </h4>
                     <form id="post_form" action="" method="POST">
                         <table id="post_table">
                             <tr>
