@@ -13,7 +13,7 @@ function check_login($con)
         }
     }
 
-    //redirect to login
+    //redirect to login if user is not logged in
     header("Location: ?p=login.php");
     die;
 }
