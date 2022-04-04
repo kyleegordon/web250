@@ -15,6 +15,7 @@
                         <li><a href="?p=joy_of_php/sams_used_cars.php">Car Guide</a></li>
                         <li><a href="?p=m6forms.php">One Form, Two Forms...</a></li>
                         <li><a href="?p=everything_form.php">Everything Form</a></li>
+                        <li><a href="?p=login.php">Login Form</a></li>
                     </ul>
                 </div>
             </div>
