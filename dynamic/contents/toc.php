@@ -17,6 +17,7 @@
                         <li><a href="?p=everything_form.php">Everything Form</a></li>
                         <li><a href="?p=login.php">Login Form</a></li>
                         <li><a href="?p=demonstrate_mds.php">Demonstrate Math, Dates, & Strings</a></li>
+                        <li><a href="?p=fizzbuzz.php">FizzBuzzBangEverything!</a></li>
                     </ul>
                 </div>
             </div>
