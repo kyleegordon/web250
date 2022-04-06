@@ -16,6 +16,7 @@
                         <li><a href="?p=m6forms.php">One Form, Two Forms...</a></li>
                         <li><a href="?p=everything_form.php">Everything Form</a></li>
                         <li><a href="?p=login.php">Login Form</a></li>
+                        <li><a href="?p=demonstrate_mds.php">Demonstrate Math, Dates, & Strings</a></li>
                     </ul>
                 </div>
             </div>
