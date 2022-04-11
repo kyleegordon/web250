@@ -25,13 +25,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 WHERE id='$id'";
         $result = mysqli_query($con, $sql);
         if ($result) {
-            echo "<script>alert('Update Successful.')</script>";
-            header("Location: ?p=account.php");
+            $update_sucess = "Update Successful";
         } else {
-            echo "<script>alert('Woops! Something Wrong Went.')</script>";
+            $update_sucess = "Update Failed";
         }
     } else {
-        echo "<script>alert('This account does not exist')</script>";
+        $update_sucess = "Account does not exist";
     }
 }
 ?>
@@ -46,6 +45,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <div class="row dflex justify-content-center">
                 <div class="col-auto h4">
+                    <?php
+                    global $update_sucess;
+                    echo "$update_sucess";
+                    ?>
                     <form id="account_form" action="" method="POST">
                         <table id="account_table" class="form_table">
                             <tr>
