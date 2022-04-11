@@ -6,7 +6,7 @@ include("functions.php");
 $user_data = check_login($con);
 $id = $user_data['id'];
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if (isset($_POST['update'])) {
 
     //assign form data to variables
     $username = $_POST['email'];
@@ -32,6 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         $update_sucess = "Account does not exist";
     }
+} else if (isset($_POST['delete'])) {
+    $update_sucess = "Delete initiated";
 }
 ?>
 
@@ -103,7 +105,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <tr style="text-align: center">
                                 <td colspan="2">
                                     <input type="submit" id="update" name="update" value="Update" />
-                                    <input type="button" id="delete" name="delete" value="Delete Account" />
+                                    <a href="?p=delete_account.php" class="btn btn-light"
+                                        onclick="return confirm('Are you sure you want to delete your account?')">Delete
+                                        Account</a>
                                 </td>
                             </tr>
                         </table>
