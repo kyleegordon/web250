@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($user_data['password'] === $password) {
                 $_SESSION['id'] = $user_data['id'];
                 $invalid = "";
-                header("Location: ?p=login_success.php");
+                header("Location: ?p=account.php");
                 die;
             } else {
                 $invalid = "<p>Invalid login credentials</p>";
