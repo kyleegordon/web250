@@ -1,9 +1,55 @@
+<?php
+session_start();
+include("connection.php");
+include("functions.php");
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    //assign form data to variables
+    $username = $_POST['email'];
+    $password = $_POST['password'];
+    $confirm_password = $_POST['confirm_password'];
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $address = $_POST['address'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $zip = $_POST['zip'];
+
+    //check if passwords match, check that user doesn't already exist, then create new account
+    if ($password == $confirm_password) {
+        $sql = "SELECT * FROM users WHERE username='$username'";
+        $result = mysqli_query($con, $sql);
+        if (!$result->num_rows > 0) {
+            $sql = "INSERT INTO users (username, password, first_name, last_name, address, city, state, zip)
+					VALUES ('$username', '$password', '$first_name', '$last_name', '$address', '$city', '$state', '$zip')";
+            $result = mysqli_query($con, $sql);
+            if ($result) {
+                header("Location: ?p=login.php");
+                die;
+                $username = "";
+                $email = "";
+                $_POST['password'] = "";
+                $_POST['cpassword'] = "";
+            } else {
+                echo "<script>alert('Woops! Something Wrong Went.')</script>";
+            }
+        } else {
+            echo "<script>alert('Woops! Email Already Exists.')</script>";
+        }
+    } else {
+        echo "<script>alert('Password Not Matched.')</script>";
+    }
+}
+?>
+
+
 <div class="row">
     <div class="col-12">
         <main class="main">
             <div class="row text-center">
                 <div class="col-sm-12 h2">
-                    <h2 class="assignment-title">Create an Account</h2>
+                    <h2 class="assignment-title">Create Account</h2>
                 </div>
             </div>
             <div class="row dflex justify-content-center">
@@ -20,6 +66,12 @@
                                 <td>Password</td>
                                 <td>
                                     <input type="password" id="password" name="password" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Password</td>
+                                <td>
+                                    <input type="password" id="confirm_password" name="confirm_password" required />
                                 </td>
                             </tr>
                             <tr>

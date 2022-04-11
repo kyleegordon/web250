@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!empty($username) && !empty($password)) {
 
         //read from database
-        $query = "SELECT * FROM login WHERE username = '$username' LIMIT 1";
+        $query = "SELECT * FROM users WHERE username = '$username' LIMIT 1";
 
         $result = mysqli_query($con, $query);
 
@@ -48,9 +48,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <form id="post_form" action="" method="POST">
                         <table id="login_table" class="form_table">
                             <tr>
-                                <td>Username</td>
+                                <td>Email</td>
                                 <td>
-                                    <input type="text" id="username" name="username" required />
+                                    <input type="email" id="username" name="username" required />
                                 </td>
                             </tr>
                             <tr>
