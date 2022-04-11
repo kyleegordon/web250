@@ -20,12 +20,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $user_data = mysqli_fetch_assoc($result);
             if (password_verify($password, $user_data['password'])) {
                 $_SESSION['id'] = $user_data['id'];
-                $invalid = "";
                 header("Location: ?p=account.php");
                 die;
             } else {
-                $invalid = "<p>Invalid login credentials</p>";
+                $alert = "Incorrect Password";
+                header("Location: ?p=login.php&alert=$alert");
             }
+        } else {
+            $alert = "Account With That Email Does Not Exist";
+            header("Location: ?p=login.php&alert=$alert");
         }
     }
 }
@@ -42,8 +45,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="row dflex justify-content-center">
                 <div class="col-auto h4">
                     <?php
-                    global $invalid;
-                    echo "$invalid";
+                    if (isset($_GET['alert'])) {
+                        echo $_GET['alert'];
+                    }
                     ?>
                     <form id="post_form" action="" method="POST">
                         <table id="login_table" class="form_table">

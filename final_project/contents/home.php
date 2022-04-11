@@ -3,6 +3,11 @@
         <main class="main">
             <div class="row text-center">
                 <div class="col-sm-12 h2">
+                    <?php
+                    if (isset($_GET['alert'])) {
+                        echo $_GET['alert'];
+                    }
+                    ?>
                     <h2 class="assignment-title">Table of Contents</h2>
                 </div>
             </div>

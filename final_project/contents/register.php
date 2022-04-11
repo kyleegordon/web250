@@ -26,20 +26,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 					VALUES ('$username', '$password', '$first_name', '$last_name', '$address', '$city', '$state', '$zip')";
             $result = mysqli_query($con, $sql);
             if ($result) {
-                header("Location: ?p=login.php");
+                $alert = "Account Created";
+                header("Location: ?p=login.php&alert=$alert");
                 die;
                 $username = "";
                 $email = "";
                 $_POST['password'] = "";
                 $_POST['cpassword'] = "";
             } else {
-                echo "<script>alert('Woops! Something Wrong Went.')</script>";
+                $alert = "Create Account Failed";
+                header("Location: ?p=register.php&alert=$alert");
             }
         } else {
-            echo "<script>alert('Woops! Email Already Exists.')</script>";
+            $alert = "Account Already Exists with that email";
+            header("Location: ?p=register.php&alert=$alert");
         }
     } else {
-        echo "<script>alert('Password Not Matched.')</script>";
+        $alert = "Passwords do not match";
+        header("Location: ?p=register.php&alert=$alert");
     }
 }
 ?>
@@ -55,6 +59,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <div class="row dflex justify-content-center">
                 <div class="col-auto h4">
+                    <?php
+                    if (isset($_GET['alert'])) {
+                        echo $_GET['alert'];
+                    }
+                    ?>
                     <form id="register_form" action="" method="POST">
                         <table id="register_table" class="form_table">
                             <tr>

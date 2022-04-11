@@ -25,15 +25,16 @@ if (isset($_POST['update'])) {
                 WHERE id='$id'";
         $result = mysqli_query($con, $sql);
         if ($result) {
-            $update_sucess = "Update Successful";
+            $alert = "Update Successful";
+            header("Location: ?p=account.php&alert=$alert");
         } else {
-            $update_sucess = "Update Failed";
+            $alert = "Update Failed";
+            header("Location: ?p=account.php&alert=$alert");
         }
     } else {
-        $update_sucess = "Account does not exist";
+        $alert = "Account Does Not Exist";
+        header("Location: ?p=account.php&alert=$alert");
     }
-} else if (isset($_POST['delete'])) {
-    $update_sucess = "Delete initiated";
 }
 ?>
 
@@ -48,8 +49,9 @@ if (isset($_POST['update'])) {
             <div class="row dflex justify-content-center">
                 <div class="col-auto h4">
                     <?php
-                    global $update_sucess;
-                    echo "$update_sucess";
+                    if (isset($_GET['alert'])) {
+                        echo $_GET['alert'];
+                    }
                     ?>
                     <form id="account_form" action="" method="POST">
                         <table id="account_table" class="form_table">

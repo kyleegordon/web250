@@ -14,8 +14,8 @@ if ($result->num_rows > 0) {
                 WHERE id='$id'";
     $result = mysqli_query($con, $sql);
     if ($result) {
-        $update_sucess = "Delete Successful";
-        header("Location: ?p=home.php");
+        $alert = "Your Account Has Been Deleted";
+        header("Location: ?p=home.php&alert=$alert");
         die;
     } else {
         $update_sucess = "Delete Failed";
