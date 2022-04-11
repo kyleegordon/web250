@@ -106,9 +106,11 @@ if (isset($_POST['update'])) {
                             </tr>
                             <tr style="text-align: center">
                                 <td colspan="2">
-                                    <input type="submit" id="update" name="update" value="Update" />
+                                    <input type="submit" id="update" name="update" value="Update"
+                                        class="btn btn-light" />
                                     <a href="?p=delete_account.php" class="btn btn-light"
-                                        onclick="return confirm('Are you sure you want to delete your account?')">Delete
+                                        onclick="return confirm('Are you sure you want to delete your account?')"
+                                        style="color:black;">Delete
                                         Account</a>
                                 </td>
                             </tr>
