@@ -14,8 +14,8 @@
             <div class="row dflex justify-content-center">
                 <div class="col-auto h4">
                     <ul id="toc_list">
-                        <li><a href="?p=login.php">Login Form</a></li>
                         <li><a href="?p=register.php">Register</a></li>
+                        <li><a href="?p=login.php">Login</a></li>
                         <li><a href="?p=account.php">Account</a></li>
                     </ul>
                 </div>
