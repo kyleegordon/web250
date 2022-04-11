@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     //check if passwords match, check that user doesn't already exist, then create new account
     if ($password == $confirm_password) {
+        $password = password_hash($password, PASSWORD_DEFAULT);
         $sql = "SELECT * FROM users WHERE username='$username'";
         $result = mysqli_query($con, $sql);
         if (!$result->num_rows > 0) {
