@@ -10,6 +10,7 @@
                 <div class="col-auto h4">
                     <ul id="toc_list">
                         <li><a href="?p=login.php">Login Form</a></li>
+                        <li><a href="?p=register.php">Register</a></li>
                     </ul>
                 </div>
             </div>
