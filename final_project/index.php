@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+if (isset($_SESSION['id'])) {
+    $logged_in = true;
+} else {
+    $logged_in = false;
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,11 +36,21 @@
 <body>
     <header class="fixed-top">
         <div class="row dflex navbar py-0 h2" id="header_nav">
-            <div class="col-10" id="logo">
+            <div class="col-6" id="logo">
                 <a href="?p=home.php"> <i class="fas fa-paw"></i>Pawsitively Posh </a>
                 <p id="tagline" style="color: rgba(194, 240, 242, 0.9); font-size: 0.85rem">
                     <i>Functional fashion for the modern dog</i>
                 </p>
+            </div>
+            <div class="col-1 nav-link ms-auto h1">
+                <?php
+                global $logged_in;
+                if ($logged_in) {
+                    echo "<a href=\"?p=logout.php\">Logout</a>";
+                } else {
+                    echo "<a href=\"?p=login.php\">Login</a>";
+                }
+                ?>
             </div>
             <div class="col-1 nav-link ms-auto h1">
                 <a href="?p=home.php"><i class="fas fa-home"></i></a>
