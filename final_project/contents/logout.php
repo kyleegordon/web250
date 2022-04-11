@@ -4,5 +4,6 @@ if (isset($_SESSION['id'])) {
     session_destroy();
 }
 
-header("Location: ?p=logout_success.php");
+$alert = "You Have Been Sucessfully Logged Out";
+header("Location: ?p=home.php&alert=$alert");
 die;

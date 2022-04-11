@@ -115,7 +115,6 @@ if (isset($_POST['update'])) {
                             </tr>
                         </table>
                     </form>
-                    <a href="?p=logout.php">Logout</a>
                 </div>
             </div>
         </main>
